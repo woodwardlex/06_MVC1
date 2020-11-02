@@ -1,0 +1,74 @@
+﻿
+@{
+    //@ starts a razor block, call to helper, or razor notation
+    //A razor block ike this one behaves just like C#
+    //-Single line comments
+    /*
+     * Block Comments
+     */ 
+
+    //The viewbag is a dynamic variable that allows for passing values between the Controller, Action, and it's View OR the View and the _Layout
+    ViewBag.Title = "Intro To Razor";
+}
+
+<!--
+    Outside of a razor block, we are back in HTML mode.
+    We can use normal HTML comments like this, but remember - HTML comments WILL SHOW UP IN THE SOURCE CODE IN A BROWSER.
+-->
+@* This i a razor comment - it is a server side comment, and cannot be seen in the source code in a browser. *@
+
+
+@* Pass the ViewBag item declared at the top to the h2 - now we only have 1 spot to update text. *@
+<h2>@ViewBag.Title</h2>
+
+<h3>Razor Description</h3>
+<p>
+    Razor is a syntax that allows the injection of C# into an HTML page.
+    If you need to escape the C# syntax and switch back to HTML mode, you can wrap your text in an HTML tag (span, li, h1, p...) OR use the at symbol + colon.
+</p>
+
+<p>
+    Hyperlinks and Razor Helpers
+</p>
+<ul>
+    <li>
+        @*                 Text                 Action  Controller *@
+        @Html.ActionLink("Home (Action Link)", "Index", "Home")
+    </li>
+    <li>
+        @Html.ActionLink("Home (Action link with class)", "Index", "Home", null, new { @class = "btn btn-primary" })
+    </li>
+    <li>
+        <a href="@Url.Action("Index", "Home")">Home (URL Action)</a>
+    </li>
+    <li>
+        <a href="@Url.Action("Index", "Home")" class="btn btn-danger">Home (URL Action with class)</a>
+    </li>
+    <li>
+        <a href="~/Home/Index">Home (Root-Relative - Least preferred)</a>
+    </li>
+</ul>
+
+@* Embed some basic C# functionality *@
+<ul>
+    @for (int i = 1; i < 11; i++)
+    {
+        <li>
+            @i
+        </li>
+    }
+</ul>
+
+@* Restrict access to some of our HTML content based on user credentials (more on this in MVC2) *@
+@if (!User.IsInRole("Admin"))
+{
+    <a href="#">Destroy all of the DATA EVER</a>
+}
+
+@if (!Request.IsAuthenticated)
+{
+    //2 ways to escape Razor
+    //Wrap content in HTML OR use @:
+    <div>You are logged in</div>
+    @:You are logged in
+}
