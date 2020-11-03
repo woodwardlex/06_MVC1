@@ -1,0 +1,212 @@
+﻿/*
+    @import url(reset.css);
+    The CSS reset removes most or all of the default styling applied by a browser. It is typically imported before any other site CSS is written and it MUST be above any custom CSS in order to avoid resetting anything that we write.
+*/
+
+@import url(import.css);
+/*Above is a syntax used to import a style sheet. Imports are usually done from the same webside but can be brough in from outside sites, as well.*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=David+Libre&family=Nunito:wght@300&family=Open+Sans+Condensed:wght@300&family=Quicksand:wght@300&display=swap');
+
+
+/* 
+    Google Fonts
+    font-family: 'David Libre', serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+*/
+
+/*
+    Theme colors
+    #F2CEAE
+    #F2AA6B
+    #04BFBF
+    #04ADBF
+    #012340
+*/
+header {
+    background-color: rgba(242, 170, 107, .7);
+    padding: 1.2em;
+}
+
+main{
+    background-color: rgba(4, 191, 191, .7);
+    margin: 20px;
+    padding: 1em 1.5em;
+}
+
+h2{
+    text-decoration: underline;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+aside h2 {
+    background-color: cadetblue;
+    color: darkslategrey;
+    text-decoration: none;
+}
+
+header h1 {
+    padding: 1em;
+    background-color: antiquewhite;
+    color: darkslategrey;
+    font-size: 28px;
+}
+
+footer {
+    font-style: italic;
+    background-color: blueviolet;
+    text-align: center;
+}
+
+.asideList {
+    list-style: upper-latin;
+}
+
+/*nav bar styling*/
+nav {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+nav ul{
+    padding: 5px;
+    background-color: antiquewhite;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+nav a {
+    font-weight: bold;
+    color: darkred;
+    text-decoration: none;
+}
+
+nav ul li{
+    list-style:none;
+    display: inline-block;
+    padding: 10px;
+}
+
+nav li:hover{
+    background-color: aquamarine;
+}
+
+.selected{
+    background-color: aquamarine;
+
+}
+
+/*colors*/
+#colordemo1{
+    background-color: #6B00E8;
+    color: #FA1976;
+}
+
+#colordemo2{
+    background-color: #333;
+    color: #0E3;
+}
+
+#colordemo3 {
+    background-color: rgb(205, 122, 35);
+    color: rgb(60%, 5%, 88%);
+} 
+
+#colordemo4{
+    background-color: rgba(205, 122, 35, .7);
+    color: rgba( 60%, 5%, 88%, .2);
+}
+
+#colordemo5{
+    background-color: darkslategrey;
+    color: ivory;
+}
+
+article p span{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#colorgradient1{
+    padding: 10px;
+/*
+    syntax: background-image: linear-gradient(angle, color-stop, color-stop2)
+*/
+    background-image: linear-gradient(90deg, red, yellow);
+}
+
+#colorgradient2{
+    padding: 20px;
+/*
+    syntax: background-image: radial-gradient(shape size at position, start-color, next, last-color)
+*/
+    background-image: radial-gradient(circle farthest-side at 50% 60%, pink, blue, purple);
+}
+
+/*Fonts*/
+#fontdemo1{
+    font-family: Forte, sans-serif;
+}
+
+#fontdemo2 {
+    font-family: 'David Libre', serif;
+}
+#fontdemo3 {
+    font-family: 'Nunito', sans-serif;
+}
+#fontdemo4 {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+#fontdemo5 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+header img{
+    float: left;
+    margin: 1em;
+}
+
+#rightColumn{
+    float: right;
+    width: 25%;
+}
+
+#leftColumn {
+    float: left;
+    width: 73%;
+    border-right: 2px solid black;
+}
+
+.clear{
+    clear: both;
+}
+
+table, tr, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td, th{
+    padding: .3em;
+}
+
+table{
+    margin: auto;
+}
+
+td{
+    text-align: center;
+}
+
+thead{
+    background-color: antiquewhite;
+}
+
+tbody{
+    background-color:beige;
+}

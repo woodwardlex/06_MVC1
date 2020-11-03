@@ -1,0 +1,13 @@
+﻿/*Home About Me*/
+h2 {
+    text-align: center;
+}
+p {
+    text-align: center;
+    margin-right: 4em;
+    margin-left: 4em;
+    line-height: 20px;
+}
+dark-wrapper {
+    background-image: url('../img/Ferns.jpg');
+}

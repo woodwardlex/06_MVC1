@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="This is a practice site to learn CSS" />
+    <meta name="keywords" content="html, css, FED1, JS, images, web" />
+    <meta name="author" content="Lexi Woodward" />
+    <title>Web Sandbox | Tables</title>
+    <link href="CSS/Custom.css" rel="stylesheet" />
+    <link href="CSS/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+</head>
+<body>
+    <header>
+        <h1 style="color: darkslategrey">
+            Web Sandbox
+        </h1>
+        <p style="font-style:italic">
+            Notes and resources for HTML and CSS.
+        </p>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+            </li>
+            <li>
+                <a href="HTML.html"><i class="fa fa-birthday-cake" aria-hidden="true"></i>HTML Basics</a>
+            </li>
+            <li class="selected">
+                <a href="css.html"><i class="fa fa-briefcase" aria-hidden="true"></i>CSS Basics</a>
+            </li>
+            <li>
+                <a href="css_topics/colors.html"><i class="fa fa-hand-spock-o" aria-hidden="true"></i>Colors</a>
+            </li>
+            <li>
+                <a href="css_topics/fonts.html"><i class="fa fa-paw" aria-hidden="true"></i>Fonts</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <article>
+                <h2>
+                    HTML Tables
+                </h2>
+                <p>
+                    Tables allow us to structure content on a page in a logical, well-formatted manner, much like an Excel file. They use a containing table tag with a thead, tbody, and optional tfoot. Each section contains tr (table row) and td (table detail) container tags that contain the content to display.
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="3">
+                                Common Web Languages
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                Technology
+                            </th>
+                            <th>
+                                Purpose
+                            </th>
+                            <th>
+                                Web Link
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                HTML
+                            </td>
+                            <td>
+                                Page Content and Structure
+                            </td>
+                            <td>
+                                <a href="http://w3schools.com/html">W3Schools HTML</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                CSS
+                            </td>
+                            <td>
+                                Styling and Layout
+                            </td>
+                            <td>
+                                <a href="http://w3shools.com/css">W3 Schools CSS</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                JavaScript
+                            </td>
+                            <td>
+                                Interactivity and Validation
+                            </td>
+                            <td>
+                                <a href="http://w3schools.com/js">W3Schools JS</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+    </main>
+    <footer>
+        &copy; Lexi G. Woodward September 2020
+    </footer>
+</body>
+</html>

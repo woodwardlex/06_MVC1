@@ -26,5 +26,10 @@ namespace Conversion.UI.MVC.Controllers
 
             return View();
         }
+
+        public ActionResult Services()
+        {
+            return View();
+        }
     }
 }

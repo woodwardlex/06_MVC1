@@ -1,0 +1,333 @@
+﻿
+@{
+    ViewBag.Title = "Html";
+}
+
+<main>
+    <aside id="rightColumn">
+        <h2>
+            Topics
+        </h2>
+        <ul class="asideList">
+            <li>
+                <a href="#basics">HTML Basics</a>
+            </li>
+            <li>
+                <a href="#tags">Tags</a>
+            </li>
+            <li>
+                <a href="#lists">Lists</a>
+            </li>
+            <li>
+                <a href="#tags">Smeantic/Non-Semantic Tags</a>
+            </li>
+            <li>
+                <a href="#links">Links</a>
+            </li>
+
+        </ul>
+    </aside>
+    <section id="leftColumn">
+        <h2 id="basics">
+            HTML Basics
+        </h2>
+        <p>
+            HTML enables us to mark up the content to provide it more meaning behind the scenes. This can be used by search engines, screen readers, outlining tools, and readers of our code in general. We can mark a word as an abbreviation, create lists, display code and output, create tables, mark content as quotes, and provide citations. Browsers may or may not implement standard formatting (such as a dotted underline) or standard behavior (such as a tooltip when you hover over that markup) -- but regardless, we can add our own CSS or JavaScript to ensure such things. The point of HTML isn't to get a visual effect. It's to describe and structure your content.
+        </p>
+
+        <article>
+            <h3 id="tags">
+                Block Level vs Inline Level Tags
+            </h3>
+            <p>
+                Block-level tags are designed to break up the flow of content on the page with line breaks, normally extend the entire width of their container, and are designed to contain other tags (block and inline). Inline tags do not normally break the flow of content, can contain other inline tags, and are designed to be contained inside block tags, but not to contain block elements themselves.
+            </p>
+            <section>
+                <h4>
+                    Common Block-level Tags
+                </h4>
+                <ul>
+                    <li>
+                        Headings - range from level 1 (primary) down to 6 (lowest level). Tags: h1 - h6
+                    </li>
+                    <li>
+                        Header – a container at the top to introduce a page or section (can be used more than once per page)
+                    </li>
+                    <li>
+                        Main – a container for primary page content – to be used up to once per page.
+                    </li>
+                    <li>
+                        Footer – a container at the bottom of a page or section, usually providing closing information like copyright and/or contact information or duplicate or lesser navigation (can be used more than once per page).
+                    </li>
+                    <li>
+                        Nav – a container intended for links, usually limited to main navigation links within the site or page.
+                    </li>
+                    <liv>
+                        Article – a stand-alone content area that could even be on its own page. Typical uses would be articles, blog posts, and important self-contained topics.
+                    </liv>
+                    <li>
+                        Section – subsections that group content together and should contain a heading. Not used simply for styling.
+                    </li>
+                    <li>
+                        Aside – content that is indirectly associated with the primary content (like pull-quotes, secondary nav blocks, advertisements, etc.)
+                    </li>
+                    <li>
+                        Div – the most generic of block-level containers. Previously the go-to standard, now the last resort container.
+                    </li>
+                    <li>
+                        Paragraph - A standard low-level block element for text and images, but one of the few not designed to contain any other block elements.
+                    </li>
+                    <li>
+                        List - Content is broken out (usually with bullet points or numbers) and designed for readability. Tags: ul, ol, dl
+                    </li>
+                    <li>
+                        Table: Designed for spreadsheet-style, tabular data, with information stored in individual cells laid out in columns and rows. Once used for page layout purposes, the adoption of CSS encourages tables to only be used grids of information for quick scanning, analysis, and comparison.
+                    </li>
+                    <li>
+                        Form: Designed to collect input from the user, typically to be sent to the webserver for server-side processing and response.
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h4>
+                    Common Inline Level Tags
+                </h4>
+                <ul>
+                    <li>
+                        img -  an image to be displayed on the page.
+                    </li>
+                    <li>
+                        a - Anchor tags typically used to create hyperlinks pointing to other locations.
+                    </li>
+                    <li>
+                        span -  a generic inline element - only exists to target and manipulate it with CSS or JavaScript.
+                    </li>
+                    <li>
+                        strong - Strong Importance
+                    </li>
+                    <li>
+                        em - Emphasized
+                    </li>
+                    <li>
+                        button - an interface element users click on to trigger some programmed functionality.
+                    </li>
+                    <li>
+                        Input - used to generate one of several types of user input controls, like text boxes, radio buttons or checkboxes
+                    </li>
+                    <li>
+                        code - example code
+                    </li>
+                    <li>
+                        samp - Sample output from a computer program
+                    </li>
+                    <li>
+                        abbr - abbreviation or acronym (although there is an acronym tag, it's fallen out of favor and been merged with abbr)
+                    </li>
+                </ul>
+            </section>
+        </article>
+        <article>
+            <h3 id="lists">
+                Lists
+            </h3>
+            <h4>
+                Ordered Lists
+            </h4>
+            <p>
+                The ordered list is a sequentially numbered series of list items. It uses an OL (Ordered List) container tag and LI (List Item) internal tags. It is used when the order or sequence of the list elements is important.
+            </p>
+            <h5>
+                How to Make a Reuben:
+            </h5>
+            <ol>
+                <li>
+                    Acquire 2 slices of rye bread.
+                </li>
+                <li>
+                    Stack lots of corned beef on bread.
+
+                </li>
+                <li>
+                    Add sauerkraut.
+                </li>
+                <li>
+                    Add Thousand Island Dressing to bread.
+                </li>
+                <li>
+                    Place bread on top of meat pile.
+                </li>
+            </ol>
+            <h4>
+                Unordered Lists
+            </h4>
+            <p>
+                Unordered lsits are bulleted lists of elements. They are used when order is not critical. They use UL (Unordered List) container tags and LI (List Item) internal tags.
+            </p>
+            <h5>
+                To Do List:
+            </h5>
+            <ul>
+                <li>
+                    Feed dogs.
+                </li>
+                <li>
+                    Buy rueben from Arby's.
+                </li>
+                <li>
+                    Make bed.
+                </li>
+                <li>
+                    Practice typing.
+                </li>
+                <li>
+                    Fold laundry.
+                </li>
+            </ul>
+            <h4>
+                Nested Lists
+            </h4>
+            <p>
+                Nested lists place lists within lists. They are most commonly used with Ols and ULs to embed a list within the LI of another list.
+            </p>
+            <h5>
+                Creating a Database:
+            </h5>
+            <ol>
+                <li>
+                    Plan the Database
+                    <ul>
+                        <li>
+                            Talk to product owners
+                        </li>
+                        <li>
+                            Whiteboard table structure
+                        </li>
+                        <li>
+                            Evaluate and modify
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Create the tables
+                    <ol>
+                        <li>
+                            Create the fields
+                        </li>
+                        <li>
+                            Assign primary keys
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    Create table relationships
+                </li>
+                <li>
+                    Add mockup data
+                </li>
+                <li>
+                    Test
+                </li>
+            </ol>
+            <h4>
+                Definiton Lists (Two-Tier Lists)
+            </h4>
+            <p>
+                Definition Lists allow us to create headers and bodies for each list item as well as to include multiple headers and/or bodies. They use DL (Definition List) container tags with DT (Definition Term) and DD (Definition Defined) internal tags.
+            </p>
+            <h5>
+                ComiCon Schedule
+            </h5>
+            <dl>
+                <dt>
+                    9am
+                </dt>
+                <dd>
+                    Doors open
+                </dd>
+                <dt>
+                    10am
+                </dt>
+                <dd>
+                    Table read with the cast of Firefly
+                </dd>
+                <dt>
+                    11:30am
+                </dt>
+                <dd>
+                    Lunch
+                </dd>
+                <dd>
+                    Warhammer 40k Mass Table Battle
+                </dd>
+                <dt>
+                    2:00pm
+                </dt>
+                <dt>
+                    4:00pm
+                </dt>
+                <dd>
+                    Autographs with the Cast of Supernatural
+                </dd>
+            </dl>
+        </article>
+        <article>
+            <h3 id="tags">
+                Semantic vs Non-Semantic Tags
+            </h3>
+            <p>
+                Semantic tags are intended to describe the content they contain, which is true to the generally accepted philosophy behind HTML. Examples of semantic tags would include em and strong. Examples of non-semantic tags are those that just describe the formatting of the content, like i for italic and b for bold. (These tags are a throwback to HTML before CSS was created to handle the appearance of the content.) Typically, the semantic em and strong tags, as well the non-semantic i and b tags, result in italic or bold text, respectively. But saying something looks italic only describes its appearance, whereas marking text up with an em tag means it's emphasized. If we use CSS to change the look of that emphasis (say, changing it to be green and bold), it still makes sense to leave it marked up as emphasized. But it wouldn't make sense for it to still be marked italics if that formatting had been removed. Again - use HTML to apply meaning to content rather than formatting.
+            </p>
+            <section>
+                <h4>
+                    Examples
+                </h4>
+                <ul>
+                    <li>
+                        <b>This line is marked up with the non-semantic b tag.</b>
+                    </li>
+                    <li>
+                        <strong>This line is marked up with the semantic stong tag.</strong>
+                    </li>
+                    <li>
+                        <i>This line is marked up with the non-semantic i tag.</i>
+                    </li>
+                    <li>
+                        <em>This line is marked up with the semantic em tag.</em>
+                    </li>
+                </ul>
+            </section>
+        </article>
+        <article>
+            <h3 id="links">
+                Links
+            </h3>
+            <h4>
+                Relative vs Absolute Links
+            </h4>
+            <p>
+                These are the two most common types of links. Either can be used to navigate to resources on your site. Absolute links can be used to navigate to outside resources or sites.
+                <br />
+                Here is a relative link example: <a href="index.html">Relative link to the home page</a>
+                <br />
+                Here is a root-relative exapmle: <a href="../index.html">Root-Relative link to the home page</a>
+                <br />
+                Here is an absolute link example that goes to an outside site:<a href="http://centriq.com" target="_blank">Centriq Training</a>
+
+            </p>
+            <p>
+                You can create a link to open up a new email to a specified address:
+                <a href="mailto:cnuckolls@centriq.com">cnuckolls@centriq.com</a>
+                <br />
+                Telephone links are often used in mobile applications to make a phone call:
+                <a href="tel:+01-913-322-7000">913-322-7000</a>
+            </p>
+            <p>
+                You can also make images clickable:
+                <a href="http://centriq.com" target="_blank">
+                    <img src="~/Content/images/CentriqLogo.png" />
+                </a>
+            </p>
+        </article>
+    </section>
+    <div class="clear"></div>
+</main>

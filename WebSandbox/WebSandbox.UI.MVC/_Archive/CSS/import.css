@@ -1,0 +1,22 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+/*
+    Google Fonts
+    font-family: 'Architects Daughter', cursive;
+*/
+
+body {
+    /*background-color: #bada55;*/
+    font-family: 'Architects Daughter', cursive;
+    background-image: url('../images/ben-krygsman-745458-unsplash.jpg');
+    background-attachment:scroll;
+    /*
+        Background Options:
+        background-image: to set an image as the background.
+        background-repeat: define if the image starts over if it's too small to fill the screen.
+        background-attachments: determines if the background is fixed or scrollable.
+        background-position: moves the background around the viewport.
+        cover: scales to completely fill the width and height.
+        contain: scales to the larges size needed to fill the height and width without truncation.
+    */
+}

@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<!--
+    This is a comment in HTML. Comments are ignored by the browser (they aren't rendered.) but are part of the DOM, so they can be seen in page source.
+
+    Above is the doctype declaration. It must be the first line of any HTML document. It provides a set of instrutions to the browser about what version of HTML it's about to read. The doctype declaration is not an HTML tag. The above "html" in the doctype indicated this page is written in HTML5.
+-->
+
+<html>
+<!-- The html tag indicates that everything inside these tags is HTML code. -->
+<head>
+    <!-- The head tag holds metadata (info about info) about the HTML document. Most content in the head is not displayed to the user. Common content includes title tags (provide a page title in the browser), meta tags (provide info about the HTML document for SEO - Search Engine Optimization), link tags (provide access to CSS files), and script tags (provide access to JavaScript functionality). -->
+    <meta charset="utf-8" />
+    <meta name="description" content="This is a practice site to learn HTML" />
+    <meta name="keywords" content="html, css, FED1, JS, images, web" />
+    <meta name="author" content="Lexi Woodward" />
+    <title>@ViewBag.Title | Web Sandbox</title>
+    <link href="~/Content/CSS/Custom.css" rel="stylesheet" />
+    <link href="~/Content/CSS/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/images/favicon.ico" rel="icon" type="image/x-icon" />
+    @*<script src="JS/html5shiv.js"></script>*@
+</head>
+<body>
+    <!--
+      The body tag contains the page content. It must follow the head. It can contain HTML or JavaScript if it's in a <script> tag. The body contains structural tags which help describe the layout of the page as well as the content for the page. The HTML in the body is targeted by CSS and JavaScript to add styling and interactivity.
+    -->
+    <header>
+        <!-- A header is a container at the top of a page or section. It often contains navigation, site logos, and search functionality. -->
+        <a href="@Url.Action("Index", "Home")">
+            <img src="~/Content/images/Sandbox-48.png" alt="Sandbox" />
+        </a>
+        <h1>
+            <!-- h1s are reserved for content of high importance. It indicates that this is the most important concept in this area. -->
+            HTML | Web Sandbox
+        </h1>
+        <p>
+            Notes and resources for HTML and CSS.
+        </p>
+    </header>
+    <nav>
+        <ul>
+            <li class="selected">
+                <a href="@Url.Action("Index", "Home")"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+            </li>
+            <li>
+                <a href="@Url.Action("Html", "Home")"><i class="fa fa-birthday-cake" aria-hidden="true"></i>HTML Basics</a>
+            </li>
+            <li>
+                <a href="@Url.Action("Css", "Home")"><i class="fa fa-briefcase" aria-hidden="true"></i>CSS Basics</a>
+            </li>
+            <li>
+                <a href="@Url.Action("Colors", "Home")"><i class="fa fa-hand-spock-o" aria-hidden="true"></i>Colors</a>
+            </li>
+            <li>
+                <a href="@Url.Action("Fonts", "Home")"><i class="fa fa-paw" aria-hidden="true"></i>Fonts</a>
+            </li>
+            <li>
+                <a href="@Url.Action("Images", "Home")">Images</a>
+            </li>
+            <li>
+                <a href="@Url.Action("Tables", "Home")">Tables</a>
+            </li>
+        </ul>
+    </nav>
+
+    @RenderBody()
+
+    <footer>
+        <!--  footer is a container at the bottom of a page or section that typically provides secondary or closing information. -->
+        &copy;@DateTime.Now.Year - Alexis G. Woodward
+    </footer>
+</body>
+</html>
